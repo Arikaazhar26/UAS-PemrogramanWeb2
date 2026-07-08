@@ -1,0 +1,524 @@
+/* ==========================================
+   LOGIN PAGE
+========================================== */
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f5f5;
+}
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Background Perpustakaan */
+
+.login-bg{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(rgba(55,35,20,.60),
+    rgba(55,35,20,.60)),
+    url('/images/library-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+    filter:blur(2px);
+}
+
+/* Card Login */
+
+.login-card{
+
+    position:relative;
+
+    width:450px;
+
+    background:rgba(255,255,255,.94);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.30);
+
+    z-index:10;
+
+}
+
+/* Logo */
+
+.logo-area{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.logo-circle{
+
+    width:90px;
+
+    height:90px;
+
+    background:#6d4c41;
+
+    color:white;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.logo-area h1{
+
+    font-size:28px;
+
+    color:#4e342e;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   WELCOME
+========================================== */
+
+.welcome{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.welcome h2{
+
+    color:#4e342e;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.welcome p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#4e342e;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#f7f4f2;
+
+    border:2px solid #ddd;
+
+    border-radius:14px;
+
+    padding:12px 15px;
+
+    transition:.3s;
+
+}
+
+.input-box:hover{
+
+    border-color:#8d6e63;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#6d4c41;
+
+    box-shadow:0 0 10px rgba(109,76,65,.25);
+
+}
+
+.input-box i{
+
+    color:#6d4c41;
+
+    font-size:18px;
+
+    margin-right:12px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+}
+
+#togglePassword{
+
+    cursor:pointer;
+
+    color:#6d4c41;
+
+}
+
+
+/* ==========================================
+   REMEMBER
+========================================== */
+
+.remember-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:20px 0;
+
+}
+
+.remember-me{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#555;
+
+    font-size:14px;
+
+}
+
+.remember-row a{
+
+    color:#6d4c41;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.remember-row a:hover{
+
+    color:#4e342e;
+
+}
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-btn{
+
+    width:100%;
+
+    background:#6d4c41;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+.login-btn:hover{
+
+    background:#4e342e;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.20);
+
+}
+
+.login-btn i{
+
+    margin-right:8px;
+
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:28px 0;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+
+    flex:1;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider span{
+
+    margin:0 15px;
+
+    color:#777;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   REGISTER BUTTON
+========================================== */
+
+.register-btn{
+
+    display:block;
+
+    width:100%;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#ffffff;
+
+    border:2px solid #6d4c41;
+
+    color:#6d4c41;
+
+    padding:13px;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    background:#6d4c41;
+
+    color:#fff;
+
+}
+
+.register-btn i{
+
+    margin-right:8px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.login-footer{
+
+    text-align:center;
+
+    margin-top:28px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.login-footer a{
+
+    color:#6d4c41;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.login-footer a:hover{
+
+    color:#4e342e;
+
+}
+
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.login-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.login-card{
+
+    width:92%;
+
+    padding:30px 25px;
+
+}
+
+.logo-circle{
+
+    width:75px;
+
+    height:75px;
+
+    font-size:34px;
+
+}
+
+.logo-area h1{
+
+    font-size:22px;
+
+}
+
+.welcome h2{
+
+    font-size:20px;
+
+}
+
+.subtitle{
+
+    font-size:13px;
+
+}
+
+}
